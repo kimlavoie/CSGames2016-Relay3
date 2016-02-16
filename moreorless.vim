@@ -1,10 +1,3 @@
-" j'ai essaye des trucs avec input() et inputdialog() 
-" mais j'ai aucunement trouve comment inputer :(
-
-" Antoine: could not test if Input and random worked (bonne change Fred :P)
-" La structure du programme est fini il faut juste debug
-
-" Found this on the internet if the random does not work 
 function! Rand(max)
     return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:])
 endfunction
@@ -14,7 +7,7 @@ let continue = 1
 while continue == 1
 	let tries = 0
 	let enteredNumber = -1
-	let randomNumber = Rand(100) % 100
+	let randomNumber = Rand() % 100
 	
 	while enteredNumber != randomNumber
 		let enteredNumber = input('Enter a number between 0 and 100: ')
