@@ -1,4 +1,4 @@
-function! Rand(max)
+function! Rand()
     return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:])
 endfunction
 
