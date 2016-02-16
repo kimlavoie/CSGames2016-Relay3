@@ -1,0 +1,1 @@
+command MoreOrLess source moreorless.vim
